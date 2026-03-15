@@ -12,8 +12,8 @@ Prints them in one sentence like:
 		int age = 22;
 		double height = 165.123456;
 		boolean student = true;
-		System.out.printf("My name is %s, I am %d years old, %f tall and I am a student:%b",name,age,height,student);
-
+		System.out.printf("My name is %s, I am %d years old, %.2f tall and I am a student:%b",name,age,height,student);
+       
 	}
 
 }
