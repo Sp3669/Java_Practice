@@ -33,6 +33,7 @@ public class ArrayAssignment {
 		for (int i = 0; i < 3; i++) {
 			System.out.printf("%s->%s->%s", timetable[i][0], timetable[i][1], timetable[i][2]);
 			System.out.println();
+			System.out.println();
 		}
 		/**
 		 * 3D Array Create a 3D array that stores: 2 batches 3 students each 2 details
