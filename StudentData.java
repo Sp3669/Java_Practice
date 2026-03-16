@@ -49,12 +49,12 @@ public class StudentData extends StudentManagement {
 					stdntArray.get(i).age, stdntArray.get(i).course, stdntArray.get(i).score);
 		}
 		/**
-		 * Print total number of students → stdntArray.size()
-Print first and last student
-Check if a student exists → contains()
+		 * Print total number of students → stdntArray.size() Print first and last
+		 * student Check if a student exists → contains()
 		 */
-       System.out.printf("The total no. of students is %d%n",stdntArray.size());
-       System.out.printf("The 1st student: %s & the last student: %s%n",stdntArray.get(0).name,stdntArray.get(stdntArray.size()-1).name);
-       System.out.printf("Is Binks there in the list: %b%n",stdntArray.contains(stdnt5));
+		System.out.printf("The total no. of students is %d%n", stdntArray.size());
+		System.out.printf("The 1st student: %s & the last student: %s%n", stdntArray.get(0).name,
+				stdntArray.get(stdntArray.size() - 1).name);
+		System.out.printf("Is Binks there in the list: %b%n", stdntArray.contains(stdnt5));
 	}
 }
