@@ -7,6 +7,7 @@ public class CollectionFramework {
 
 	public static void main(String[] args) {
 		// Array
+		//BharathLec
 		String[] studentName = new String[5];
 		studentName[0] = "Somanjan";
 		studentName[1] = "Sp";
