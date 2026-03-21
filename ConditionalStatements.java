@@ -1,6 +1,6 @@
 package com.creatio.crm.language.basics;
 
-import sun.security.ec.SunEC;
+
 
 public class ConditionalStatements {
 
@@ -45,7 +45,7 @@ public class ConditionalStatements {
 		// and so on...
 		// Any other number → "Invalid day"
 		int day;
-		day = 3;
+		day = 0;
 		switch (day) {
 		case 1:
 			System.out.println("Sunday");
