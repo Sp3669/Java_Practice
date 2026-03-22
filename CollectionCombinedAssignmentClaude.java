@@ -100,8 +100,8 @@ public class CollectionCombinedAssignmentClaude {
 		Map<String, String> Order3 = new LinkedHashMap<String, String>();
 
 		// Previous Data
-		Order3.put("orderID", "Sp369");
-		Order3.put("customerName", "Kitchen");
+		Order3.put("orderID", "O000CfM2345");
+		Order3.put("customerName", "Sp369");
 		Order3.put("productName", "Coffee Maker");
 		Order3.put("quantity", "1");
 		Order3.put("totalPrice", "475");
@@ -170,24 +170,32 @@ public class CollectionCombinedAssignmentClaude {
 			}
 		}
 		System.out.println("Product Categories: "+productCategory);
-		
+		System.out.println("*********************************************************************");
 		/**
-		 *  Create a LinkedHashMap storing customerName → totalPrice for all orders 
-		 Print the customer who paid the most
+		 * Create a LinkedHashMap storing customerName → totalPrice for all orders Print
+		 * the customer who paid the most
 		 */
-//		Map<String,Integer> customerNametotalPrice = new LinkedHashMap<String,Integer>();
-//		for (int i = 0; i < MasterList.size(); i++) {
-//			if (MasterList.get(i).containsKey("orderID")) {
-//				customerNametotalPrice.put(MasterList.get(i).get("customerName"),Integer.parseInt(MasterList.get(i).get("totalPrice")));
-//			}
-//		}
-//		System.out.println(customerNametotalPrice);
-//		for(int i=0; i< customerNametotalPrice.size(); i++) {
-//			int highestPaid = customerNametotalPrice.get());
-//			 if(highestPaid > customerNametotalPrice.get()) {
-//				 
-//			 }
-//		}
-			
- }
+		Map<String, Integer> customerNametotalPrice = new LinkedHashMap<String, Integer>();
+		for (int i = 0; i < MasterList.size(); i++) {
+			if (MasterList.get(i).containsKey("orderID")) {
+				customerNametotalPrice.put(MasterList.get(i).get("customerName"),
+						Integer.parseInt(MasterList.get(i).get("totalPrice")));
+			}
+		}
+		System.out.println(customerNametotalPrice);
+		int highestpaid = 0;
+		String highestpaidCustomer = null;
+		for (String key : customerNametotalPrice.keySet()) {
+
+			if (customerNametotalPrice.get(key) > highestpaid) {
+				highestpaid = customerNametotalPrice.get(key);
+				highestpaidCustomer = key;
+			}
+
+		}
+
+		System.out.println(highestpaidCustomer);
+	}
+
 }
+
