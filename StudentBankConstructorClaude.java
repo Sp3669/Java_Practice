@@ -35,7 +35,7 @@ public class StudentBankConstructorClaude {
 		if(balance == 0) {
 			System.out.println("!!!!Alert!!!!");
 		}
-		System.out.println("Balance in your account:$"+balance);
+		System.out.println("Balance in your account :$"+balance);
 	}
 //	printStatement() → prints full bank statement
 	public void printDetails() {
