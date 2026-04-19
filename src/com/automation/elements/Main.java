@@ -22,8 +22,16 @@ public class Main {
 		CheckBox checkBoxo1 = new CheckBox();
 		elementTypes.add(button1);
 		elementTypes.add(checkBoxo1);
+		elementTypes.add(null);
+		try {
 		for (UIElement value : elementTypes ) {
 			value.interact();
+		}
+		}catch (Exception e) {
+			System.out.println("!!Error!!"+e);
+			System.err.println("Please check the list again");
+		}finally {
+			System.out.println("Execution completed");
 		}
 
 	}

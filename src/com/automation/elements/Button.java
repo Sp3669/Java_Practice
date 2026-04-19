@@ -3,6 +3,7 @@ package com.automation.elements;
  * This is a Class named "Button"
  * which implement the interface "UIElement"
  * Here We define the "interact" method
+ * @author Somanjan Pramanik (somanjan1606@gmail.com).
  */
 public class Button implements UIElement {
 	/**

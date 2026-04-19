@@ -3,6 +3,7 @@ package com.automation.elements;
  * This is a Class named "CheckBox"
  * which implement the interface "UIElement"
  * Here We define the "interact" method
+ * @author Somanjan Pramanik (somanjan1606@gmail.com).
  */
 public class CheckBox implements UIElement {
 	/**
